@@ -1,6 +1,6 @@
-1.  Name 3 JavaScript Array/Object Methods that do not produce side-effects? Which method do we use to create a new object while extending the properties of another object?
-1.  Describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
-1.  What is the difference between Application state and Component state? When would be a good time to use one over the other?
-1.  What is middleware?
-1.  Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
-1.  Which `react-redux` method links up our `components` with our `redux store`?
+1.  Name 3 JavaScript Array/Object Methods that do not produce side-effects? Which method do we use to create a new object while extending the properties of another object? Map, Reduce, and Filter.  MAP
+1.  Describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?  Actions are javascript functions that return an object that describes an action.  This object is then passed into the reducer, which takes that object and may update state with it.  The reducer is a javascript function that updates global state through switch/case statements depending on the action passed in.  The store is the global memory location that redux creates for us that solves the 'prop-drilling' practice that was necessary prior to redux.  State is kept in this global location and is referred to as the "store".
+1.  What is the difference between Application state and Component state? Application state is state kept globally, whereas component state is state kept within that component and possibly passed down through props. When would be a good time to use one over the other?  Component state is ideal for inut form gathering.
+1.  What is middleware?  A HOC that adds functionality to Redux by intercepting dispatched actions before they are passed on to the reducers.
+1.  Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`? Thunk allows for asynchronous action creators which allows them to work with promises.
+1.  Which `react-redux` method links up our `components` with our `redux store`? { connect }
