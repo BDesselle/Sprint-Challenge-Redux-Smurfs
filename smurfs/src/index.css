@@ -1,5 +1,60 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+:root {
+	/* COLORS */
+	--bg-light: #e9ebee;
+	--bg-dark: #d4d8e8;
+	--main: #29487d;
+	--secondary: #3c5898;
+	--tertiary: #9cb2ce;
+	--alert: #fa3e3e;
+	--dark: #1d3469;
+	--white: #ffffff;
+	--black: #000000;
+
+	/* FONTS */
+	--head: 'klavika';
+	--body: Arial, Helvetica, sans-serif;
 }
+/* FONT CALL */
+@font-face {
+	font-family: 'klavika';
+	src: url(/smurfs/klavika.otf);
+}
+
+/* CSS */
+/* body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-light);
+	height: 100vh;
+}
+
+fieldset {
+	border-radius: 15px;
+	margin: 0 auto;
+}
+
+.smurf-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.smurf {
+	width: 250px;
+	margin: 2%;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	background-color: grey;
+}
+
+input {
+	margin: 1% 2% 1% 0.5%;
+}
+
+input#age {
+	width: 40px;
+}
+
+input#height {
+	width: 70px;
+}
+ */
